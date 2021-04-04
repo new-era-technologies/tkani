@@ -1,0 +1,16 @@
+@import "base/reset";
+@import "base/fonts";
+@import "utils/mixins";
+@import "layout/header";
+@import "layout/footer";
+
+.main-wrapper {
+    background: #ffffff;
+}
+
+.container {
+    width: 1175px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
