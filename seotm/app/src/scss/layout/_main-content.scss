@@ -1,0 +1,113 @@
+.main-content {
+    width: 810px;
+    box-sizing: border-box;
+    &__sort {
+        border-bottom: 1px solid #858585;
+    }
+    &__slider {
+        margin-top: 45px;
+    }
+    &__goods {
+        margin-top: 30px;
+    }
+}
+
+.sort {
+    display: flex;
+    @include font(Oswald, normal, 300, 20px, 31px, #000000);
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-left: 35px;
+    }
+    &__link {
+        @include font(Oswald, normal, 300, 20px, 31px, #9fbf30);
+        text-decoration: none;
+    }
+}
+
+.slider {
+}
+
+.goods {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        padding: 30px 30px 12px 30px;
+        position: relative;
+        border: 1px solid transparent;
+        transition: border 0.2s ease-in-out;
+    }
+    &__item:hover {
+        border: 1px solid #9fbf30;
+    }
+}
+
+.product-item {
+    &__fav {
+        width: 24px;
+        height: 21px;
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+        right: 40px;
+        background: url('../assets/img/icons/fav.png') no-repeat;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    &__id {
+        margin-top: 6px;
+        @include font(Oswald, normal, 300, 16px, 24px, #b3b3b3);
+    }
+    &__composition {
+        margin-top: 10px;
+        @include font(Oswald, normal, 300, 16px, 24px, #000000);
+    }
+    &__price {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        @include font(Oswald, normal, 300, 30px, 31px, #9fbf30);
+    }
+    &__price > b {
+        @include font(Oswald, normal, 300, 20px, 31px, #b4b4b4);
+        text-decoration: line-through;
+    }
+    &__but-buy {
+        width: 210px;
+        height: 40px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9fbf30;
+        border: none;
+        border-radius: 19px;
+        outline: none;
+        @include font(Oswald, normal, 300, 20px, 40px, #ffffff);
+        cursor: pointer;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        &--title {
+            margin-top: 20px;
+            justify-content: flex-start;
+            @include font(Oswald, normal, 400, 22px, 31px, #000000);
+        }
+        &--opt {
+            margin-top: 12px;
+            @include font(Oswald, normal, 300, 20px, 31px, #b4b4b4);
+        }
+        &--opt > img {
+            margin-right: 10px;
+        }
+    }
+}

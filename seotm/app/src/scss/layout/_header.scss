@@ -21,7 +21,7 @@
     &__link {
         padding: 10px 20px 15px 25px;
         display: flex;
-        @include font(Oswald, normal, 200, 20px, 1.55, #d3d3d3);
+        @include font(Oswald, normal, 300, 20px, 1.55, #d3d3d3);
         text-decoration: none;
         transition: 0.2s ease-in;
         &--main {
@@ -103,7 +103,7 @@
         }
         &__link {
             display: flex;
-            @include font(Oswald, normal, 200, 20px, 1.55, #d3d3d3);
+            @include font(Oswald, normal, 300, 20px, 1.55, #d3d3d3);
             text-decoration: none;
             transition: 0.2s ease-in;
         }
@@ -130,7 +130,7 @@
             width: 560px;
             height: 51px;
             padding: 0 25px;
-            @include font(Oswald, normal, 200, 20px, 1.55, #d3d3d3);
+            @include font(Oswald, normal, 300, 20px, 1.55, #d3d3d3);
             display: flex;
             background: #919191;
             border: none;
