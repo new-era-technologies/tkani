@@ -10,6 +10,9 @@
     &__goods {
         margin-top: 30px;
     }
+    &__pages {
+        margin-top: 80px;
+    }
 }
 
 .sort {
@@ -38,11 +41,6 @@
     &__item {
         padding: 30px 30px 12px 30px;
         position: relative;
-        border: 1px solid transparent;
-        transition: border 0.2s ease-in-out;
-    }
-    &__item:hover {
-        border: 1px solid #9fbf30;
     }
 }
 
@@ -54,7 +52,7 @@
         z-index: 1;
         top: 40px;
         right: 40px;
-        background: url('../assets/img/icons/fav.png') no-repeat;
+        background: url("../assets/img/icons/fav.png") no-repeat;
         border: none;
         outline: none;
         cursor: pointer;
@@ -110,4 +108,28 @@
             margin-right: 10px;
         }
     }
+}
+
+.pages {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__but {
+        margin-right: 150px;
+        background: none;
+        border: none;
+        outline: none;
+        @include font(Oswald, normal, 400, 20px, 40px, #363636);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    &__link {
+        @include font(Oswald, normal, 300, 20px, 40px, #868686);
+        letter-spacing: 0.2em;
+        text-decoration: none;
+    }
+}
+
+.active-page-link {
+    @include font(Oswald, normal, 700, 20px, 40px, #272727);
 }
