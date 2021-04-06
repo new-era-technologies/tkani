@@ -120,8 +120,10 @@
         border: none;
         outline: none;
         @include font(Oswald, normal, 400, 20px, 40px, #363636);
-        text-decoration: underline;
         cursor: pointer;
+    }
+    &__but:hover {
+        text-decoration: underline;
     }
     &__link {
         @include font(Oswald, normal, 300, 20px, 40px, #868686);

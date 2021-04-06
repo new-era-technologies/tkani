@@ -1,0 +1,76 @@
+.feedback {
+    margin-top: 105px;
+    &__subscription {
+        height: 214px;
+        padding-top: 40px;
+        padding-left: 55px;
+        border-bottom: 10px solid #9fbf30;
+        background: url("../assets/img/feedback/subscribe.png") no-repeat;
+        box-sizing: border-box;
+    }
+    &__location {
+        height: 237px;
+        padding-top: 51px;
+        padding-left: 66px;
+        background: url("../assets/img/feedback/location.png") no-repeat;
+        box-sizing: border-box;
+    }
+}
+
+.form {
+    &__title {
+        @include font(Oswald, normal, 400, 30px, 31px, #ffffff);
+    }
+    &__container {
+        margin-top: 26px;
+    }
+    &__email,
+    &__name,
+    &__submit {
+        width: 457px;
+        height: 42px;
+        padding: 0 50px;
+        background-color: #ffffff;
+        @include font(Oswald, normal, 300, 20px, 31px, #a4a4a4);
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+    }
+    &__name {
+        width: 397px;
+        margin-left: 13px;
+        padding: 0 35px;
+    }
+    &__submit {
+        width: 190px;
+        height: 45px;
+        margin-left: 18px;
+        padding-left: 56px;
+        background-color: #1f1f1f;
+        border-radius: 22.5px;
+        @include font(Oswald, normal, 300, 20px, 31px, #ffffff);
+        cursor: pointer;
+    }
+}
+
+.location {
+    &__title {
+        @include font(Oswald, normal, 400, 30px, 31px, #ffffff);
+    }
+    &__container {
+        margin-top: 68px;
+        margin-left: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__descr,
+    &__address,
+    &__address > a {
+        @include font(Oswald, normal, 300, 24px, 31px, #ffffff);
+        text-decoration: none;
+    }
+    &__address {
+        margin-right: 133px;
+    }
+}
