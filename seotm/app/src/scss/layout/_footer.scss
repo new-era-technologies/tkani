@@ -1,0 +1,54 @@
+.footer {
+    margin-top: 52px;
+    padding-top: 60px;
+    background-color: #000000;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__logo {
+        width: 140px;
+        height: 54px;
+    }
+    &__descr {
+        margin-top: 18px;
+    }
+    &__link {
+        display: flex;
+        @include font(Opinion Pro, normal, 300, 17px, 34px, #b3b3b3);
+        transition: 0.2s ease;
+        text-decoration: none;
+    }
+    &__link:hover {
+        color: #9fbf30;
+    }
+    &__text {
+        @include font(Opinion Pro, normal, 300, 17px, 34px, #b3b3b3);
+        &--mark {
+            color: #9fbf30;
+        }
+        &--mark > span {
+            text-transform: uppercase;
+        }
+    }
+    &__soc {
+        display: flex;
+        align-items: center;
+        .footer__link > img {
+            margin-right: 10px;
+        }
+    }
+    &__copyright {
+        height: 51px;
+        margin-top: 28px;
+        background-color: #161616;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font(Oswald, normal, 300, 12px, 24px, #9a9a9a);
+    }
+}

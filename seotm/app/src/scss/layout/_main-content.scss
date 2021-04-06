@@ -72,7 +72,7 @@
         align-items: baseline;
         @include font(Oswald, normal, 300, 30px, 31px, #9fbf30);
     }
-    &__price > b {
+    &__price > span {
         @include font(Oswald, normal, 300, 20px, 31px, #b4b4b4);
         text-decoration: line-through;
     }
