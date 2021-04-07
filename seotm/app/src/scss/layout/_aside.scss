@@ -1,6 +1,7 @@
 .aside {
     width: 325px;
     border: 1px solid #9fbf30;
+    border-bottom: none;
     border-left: none;
     box-sizing: border-box;
     &__inner {
@@ -13,15 +14,79 @@
 
 .category {
     &__title {
-        @include font(Oswald, normal, 300, 20px, 31px, #000000);
+        @include font(Oswald, normal, 300, 20px, 40px, #000000);
+    }
+    &__list {
+        margin-top: 30px;
+        margin-bottom: 15px;
     }
     &__item {
-        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        @include font(Oswald, normal, 300, 20px, 40px, #3e3e3e);
     }
-    &__subtitle {
+    &__input {
+        width: 19px;
+        height: 19px;
+        margin-right: 10px;
+        &--from,
+        &--to {
+            width: 83px;
+            height: 36px;
+            padding-left: 30px;
+            border: 1px solid #b4b4b4;
+            border-radius: 2px;
+            box-sizing: border-box;
+            @include font(Oswald, normal, 300, 20px, 36px, #a3a3a3);
+        }
+        &--from {
+            margin-right: 30px;
+        }
+        &--to {
+            margin-right: 15px;
+        }
+        &--submit {
+            width: 89px;
+            height: 39px;
+            border: 1px solid #000000;
+            border-radius: 19px;
+            background: none;
+            box-sizing: border-box;
+            @include font(Oswald, normal, 300, 20px, 36px, #000000);
+            outline: none;
+            cursor: pointer;
+        }
+        &--range {
+            margin-bottom: 30px;
+        }
+        &--hidden {
+            display: none;
+        }
+    }
+    &__inputs,
+    &__colors {
+        margin: 15px 0 35px -15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include font(Oswald, normal, 300, 20px, 40px, #3e3e3e);
+    }
+    &__color {
+        width: 45px;
+        height: 31px;
+        background-color: #c9c9c9;
+        border-radius: 2px;
+        cursor: pointer;
+        &--s {
+            background-color: #9fbf30;
+        }
+        &--t {
+            background-color: #ebebeb;
+        }
+        &--fo {
+            background-color: #a3a3a3;
+        }
+        &--fi {
+            background-color: #ebebeb;
+        }
     }
 }
