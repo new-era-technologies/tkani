@@ -18,10 +18,17 @@
     }
     &__subtitle {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
-    &__subtitle > img {
+    &__dropdown {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    &__dropdown > img {
         transition: 0.2s ease;
     }
     &__subfilter {
@@ -39,7 +46,6 @@
     }
     &__item {
         @include font(Oswald, normal, 300, 20px, 40px, #3e3e3e);
-        cursor: pointer;
     }
     &__label {
         display: flex;
@@ -78,7 +84,9 @@
             cursor: pointer;
         }
         &--range {
+            width: 100%;
             margin-bottom: 30px;
+            box-sizing: border-box;
         }
         &--hidden {
             display: none;
