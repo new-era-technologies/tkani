@@ -31,6 +31,32 @@
 }
 
 .slider {
+    width: 810px;
+    height: 436px;
+    position: relative;
+    overflow: hidden;
+    &__list {
+        width: 2430px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__arrow {
+        width: 18px;
+        height: 44px;
+        position: absolute;
+        top: calc(50% - 22px);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &--left {
+            left: 10px;
+            background: url('../assets/img/icons/arrow-left-slider.png');
+        }
+        &--right {
+            right: 10px;
+            background: url('../assets/img/icons/arrow-right-slider.png');
+        }
+    }
 }
 
 .goods {
